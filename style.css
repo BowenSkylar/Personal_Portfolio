@@ -92,12 +92,14 @@ h2{
   outline: none;
   background-color: #a5daec;
   color:#444;
+  transform: translateY(1px);
+
   transition: background-color .7s ease;
 }
 
 #viewPortfolio:active {
-  transform: translateY(3px);
-  background-color: #a5daec;
+  transform: translateY(5px);
+  background-color: #a5daed;
 }
 
 #projects{

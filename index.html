@@ -1,0 +1,134 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Skylar Bowen</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+ </head>
+ <body>
+
+
+
+  </div>
+   <div class="landing">
+    <h1 id="name">{ Skylar Bowen }</h1>
+    <h2 id="shuffle"> Full Stack Web Developer</h2>
+    <button id="viewPortfolio" type="submit">
+    <a href="#destination">Contact Me</a>
+    </button>
+<!-- scrolls to projects -->
+  </div>
+
+<div class="aboutme-container">
+  <h2 id="aboutMe">About Me</h2>
+    <img class="headshot" src="headshot.png" alt="profile_photo">
+    <p id="info"> I'm a twenty-three year old Full Stack Developer, located in New York, NY. </br></br>
+                I’m extremely passionate about web development and design in every form. </br>
+                I find it rewarding being apart of such a huge community of creative and innovative individuals.</br></br>
+                Aside from Web Developing, I enjoy spending my time with family, friend, dogs, and <br> my girlfriend,
+                taking photos, exploring new places, and discovering new foods.
+                <br><i>(Yes I am one of those who take photos of my eggs benedict to share with the world)</i></br></br>
+                Feel free to stop by my github and see what I am currently working on, or feel free to shoot me a message & say hi!</br></br>
+                #WomenWhoCode #WomenInTech</p>
+</div>
+
+<div class="projects-container">
+  <h2 id="projects">Projects</h2>
+      <a href="https://wid-blink.herokuapp.com">
+        <img class="projectImage" id="blink" src="images/Blink.png" alt="Blink">
+      </a>
+
+      <a href="http://thenextround.herokuapp.com/">
+        <img class="projectImage" target="_blank" id="theNextRound" src="images/theNextRound.png" alt="The Next Round">
+      </a>
+
+      <a href="https://bowenskylar.github.io/Clown-Down/">
+        <img class="projectImage" target="_blank" id="clownDown" src="images/clownDownScreenshot.png" alt="Clown Down Game">
+      </a>
+
+      <a href="pdfs/cremebruleecart.pdf">
+        <img class="projectImage" target="_blank" id="cremeBrulee" src="images/mockphotos2.png" alt="Creme Brulee Rebrand">
+      </a>
+<!--
+      <a href="pdfs/OrginalBarber.pdf">
+        <img class="projectImage" target="_blank" id="ogbarber" src="images/ogbarber.png" alt="Original Barber Mock Up">
+      </a> -->
+
+      <a href="">
+        <img class="projectImage" target="_blank" id="strangerthings" src="images/strangerthingsgame.png" alt="Stranger Things Eggo Chase">
+      </a>
+
+      <a href="pdfs/BestOfTheBay.pdf">
+        <img class="projectImage" target="_blank" id="bestofthebay" src="images/bestofbay.png" alt="Best Of The Bay Mock Up">
+      </a>
+</div>
+
+<div class="socialMedia">
+    <a href="https://github.com/BowenSkylar"><span><i id="social" title="github" class="fa fa-github-alt fa-5x" aria-hidden="true"></i></span></a>
+    <a href="https://www.linkedin.com/in/skylarbowen"><span><i id="social" title="linkedin" class="fa fa-linkedin fa-5x" aria-hidden="true"></i></span></a>
+    <a href="resume.pdf"><span><i id="social" title="resume" class="fa fa-list-alt fa-5x" aria-hidden="true"></i></span></a>
+    <a href="mailto:bowen.skylar@gmail.com  "><span><i id="social" title="email" class="fa fa-envelope fa-5x" aria-hidden="true"></i></span></a>
+
+
+  <footer>
+      Made with &hearts; by Skylar
+  </footer>
+</div>
+
+<div id="destination"></div>
+
+
+
+<script>
+console.log('hooked up!');
+
+var arrayOfText = [
+  "// Full Stack Web Developer",
+  "// Artist",
+  "// Creative Mind",
+  "// DIY-er",
+  "// Foodie",
+  "// Adventure Seeker",
+  "// Film Guru",
+  "// Lover",
+  "// Sister",
+  "// Daughter",
+  "// Absolute Nerd"
+];
+
+$(document).ready(function() {
+  //scroll down
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top
+    }, 800);
+    return false;
+});
+
+
+//scroll back
+$('#backtop').click(function(){
+    scroll(-1000,-1000);
+    return false;
+});
+
+
+
+  function shuffleText() {
+    var counter = $("#shuffle").data("cycle") || 0;
+    $("#shuffle").data("cycle", counter === arrayOfText.length - 1 ? 0 : counter + 1).text(arrayOfText[counter]).fadeIn()
+      .delay(1000).fadeOut(400, shuffleText);
+  }
+  shuffleText()
+});
+
+</script>
+ </body>
+ </html>
+
+
+
+

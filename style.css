@@ -1,0 +1,161 @@
+*{
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#social:hover{
+  color: tomato ;
+  transition: color .3s ease-in-out;
+  transition: font-size .3s linear;
+  font-size: 12em;
+}
+
+#social{
+  transition: font-size .3s linear;
+  font-size: 10em;
+}
+
+#aboutMe {
+  opacity: .5;
+  font-size: 5vw;
+  letter-spacing: 20px;
+}
+
+.projectImage:hover{
+  border: 3px solid tomato;
+  transition: border .3s linear;
+
+}
+
+.landing{
+  background-image: url("http://i.imgur.com/an3Hub2.jpg");
+  height: 97vh;
+  width: 100vw ;
+  background-size: cover;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #888;
+  box-shadow: inset 10px -25px 65px -24px rgba(0,0,0,1);
+}
+
+header{
+  padding-top: 3vh;
+  font-weight: 800;
+  font-size: 2vw;
+  color: #f0efef;
+}
+
+h1{
+  text-align: center;
+  padding-top: 28vh;
+  font-weight: 600;
+  font-size: 11vw;
+  letter-spacing: 3px;
+  margin-bottom: 3vw;
+  color: #222;
+  font-weight: 400;
+  text-shadow: 2px 2px 4px #666;
+}
+
+h2{
+  text-align: center;
+  font-weight: 200;
+  font-size: 4vw;
+  letter-spacing: 2px;
+  color: rgba(0,0,0,.2);
+}
+
+#viewPortfolio{
+  background-color: rgba(0,0,0,.2);
+  color: #333;
+  letter-spacing: 3px;
+  padding: 15px;
+  font-size: 2vw;
+  font-weight: 500;
+  border-radius: 10px;
+  margin-left: 42vw;
+  margin-top: 10vw;
+  transition: background-color .4s ease;
+  opacity: .7;
+  cursor: pointer;
+  background-color: transparent;
+  border:3px solid #62c5e5;
+}
+
+#viewPortfolio:hover{
+  outline: none;
+  background-color: #a5daec;
+  color:#444;
+  transition: background-color .7s ease;
+}
+
+#viewPortfolio:active {
+  transform: translateY(3px);
+  background-color: #a5daec;
+}
+
+#projects{
+  margin-bottom: 5vw;
+  font-size: 7vw;
+  letter-spacing: 20px;
+}
+
+.projects-container{
+  background-color: #333;
+  height: 165vh;
+  padding:3vw;
+  padding-left: 13vh;
+}
+
+.aboutme-container{
+  background-color: #fafafa;
+  height: 50vh;
+  padding:5vw;
+  padding-left: 7vh;
+}
+
+.socialMedia{
+  background-color: #c2e9f6;
+  height: 50vh;
+  padding-top:25vw;
+  padding-bottom: 3vw;
+  text-align: center;
+  box-shadow: inset 10px -25px 65px -24px rgba(0,0,0,1);
+}
+
+#info{
+  font-weight: 300;
+  margin-top: 2vw;
+  margin-left: 27vw;
+}
+
+.headshot{
+  height: 40vh;
+  width: 25vw;
+  border-radius: 150px;
+  float: left;
+}
+
+.projectImage{
+  height: 40vh;
+  width: 40vw;
+  margin: 1vw;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+span{
+  padding: 45px;
+}
+
+footer{
+  text-align: center;
+  letter-spacing: 4px;
+  font-weight: 200px;
+  margin-top: 14vw;
+}
